@@ -45,3 +45,10 @@
         color: #fff;
     }
 }
+
+@media (max-width:490px){
+    .list-name{
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -11,7 +11,7 @@ export class HomeComponent implements OnInit {
   citties: City[] = [
     { name: 'Dallol' },
     { name: 'Fairbanks' },
-    { name: 'Lodon' },
+    { name: 'London' },
     { name: 'Recife' },
     { name: 'Vancouver' },
     { name: 'Yakutsk' },

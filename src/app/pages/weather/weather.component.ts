@@ -33,7 +33,7 @@ export class WeatherComponent implements OnInit {
       color = '#57CBDB';
     } */
     
-    if([1000, 1001, 1004].indexOf(this.weather?.code) !== -1) {
+    if([1000, 1001, 1003, 1004].indexOf(this.weather?.code) !== -1) {
       color = '#57CBDB';
     } else if ([1000, 1001, 1004].indexOf(this.weather?.code) !== -1) {
       color = '#57CBDB';
