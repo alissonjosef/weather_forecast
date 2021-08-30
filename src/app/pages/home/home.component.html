@@ -1,0 +1,16 @@
+<div class="weather">
+  <div>
+    <div class="title">
+      <h1>WEATHER</h1>
+      <p>select a city</p>
+    </div>
+
+    <div class="icon-globo">
+      <span class="material-icons"> public </span>
+    </div>
+
+    <div class="list-name">
+      <a [routerLink]="['/weather', city.name]" routerLinkActive="router-link-active"  *ngFor="let city of citties"> {{city.name}} </a>
+    </div>
+  </div>
+</div>

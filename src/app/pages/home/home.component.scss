@@ -1,0 +1,47 @@
+.weather {
+    background: black;
+    width: auto;
+    height: 950px;
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    text-align: center;
+
+    h1 {
+        padding: 0;
+        font-size: 30px;
+    }
+
+    p{
+        padding: 0;
+        font-size:25px;
+    }
+
+    .icon-globo{
+        margin-top: 40px;
+    }
+
+    .material-icons{
+        font-size: 150px;
+    }
+    
+}
+
+.list-name {
+    width: auto;
+    margin-top: 50px;
+    font-size: 30px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    justify-content: center;
+    a {
+        padding: 10px;
+        font-size:20px;
+        cursor: pointer;
+        text-decoration: none;
+        color: #fff;
+    }
+}

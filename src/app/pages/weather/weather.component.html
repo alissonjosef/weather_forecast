@@ -1,0 +1,87 @@
+<div class="forecast" [ngStyle]="{'background-image': background}">
+  <div class="Arrow-back">
+    <button mat-icon-button routerLink="/home">
+      <mat-icon>arrow_back</mat-icon>
+    </button>
+  </div>
+  <div class="body-forecast">
+    <div>
+      <div class="title-city">
+        <h1>{{ city.name | uppercase }}</h1>
+        <p>{{ weather?.description }}</p>
+      </div>
+
+      <div class="number-great">
+        <div class="degree-number">
+          <h2>{{ weather?.temp.current }}</h2>
+          <div class="degree-number-maxmin">
+            <span>ºC</span>
+            <div>
+              <span class="degree">
+                <mat-icon>north</mat-icon>
+                {{weather?.temp.max}}º
+              </span>
+              <span class="degree">
+                <mat-icon>south</mat-icon>
+                {{weather?.temp.min}}º
+              </span>
+            </div>
+            <!-- <div class="arrow-up">
+                            <span class="material-icons">
+                                north <p>20°</p>
+                                </span>
+                            
+                        </div>
+                        
+                        <div class="arrow-down">
+                            <span class="material-icons">
+                                south <p>20º</p>
+                                </span>
+
+                        </div> -->
+          </div>
+        </div>
+
+        <div class="icon-clima">
+          <img
+            *ngIf="weather"
+            src="{{ weather.icon }}"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div>
+        <div class="icon-forecast">
+          <div class="day" *ngFor="let hour of weather?.hours">
+            <p>{{hour.description}}</p>
+            <img src="{{hour.icon}}"width="40px">
+            <h3>{{hour.temp}}ºC</h3>
+          </div>
+        </div>
+
+        <div class="wind-speed-time">
+          <div class="speed">
+            <p>wind speed</p>
+            <span>{{ weather?.windSpeed }} km/h</span>
+          </div>
+
+          <div class="speed">
+            <p>sunrise</p>
+            <span>{{ weather?.sunrise  }}</span>
+          </div>
+
+          <div class="speed">
+            <p>sunset</p>
+            <span>{{ weather?.sunset }}</span>
+          </div>
+
+          <div class="speed">
+            <p>humidity</p>
+            <span>{{ weather?.humidity }}%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
