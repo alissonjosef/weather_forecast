@@ -48,7 +48,15 @@
 
 @media (max-width:490px){
     .list-name{
-        display: flex;
-        flex-direction: column;
+        width: auto;
+        margin-top: 31px;
+        font-size: 30px;
+        display: grid;
+        grid-template-columns: 100px 100px 100px;
+        justify-content: center;
+    }
+
+    .list-name a {
+        font-size: 15px;
     }
 }
