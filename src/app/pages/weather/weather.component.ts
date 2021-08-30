@@ -37,7 +37,7 @@ export class WeatherComponent implements OnInit {
       color = '#57CBDB';
     } else if ([1000, 1001, 1004].indexOf(this.weather?.code) !== -1) {
       color = '#57CBDB';
-    }else if ([1005, 1006, 1007].indexOf(this.weather?.code) !== -1) {
+    }else if ([1009, 1010,1011].indexOf(this.weather?.code) !== -1) {
       color = '#E0E0E0';
     }
     return `linear-gradient(rgb(83, 95, 109), ${color})` 
